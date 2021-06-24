@@ -1,0 +1,36 @@
+#cal {
+  border: 2px solid black;
+  margin: auto;
+  width: 30vw;
+  border-radius: 10px;
+}
+table {
+  width: 30vw;
+  border-collapse: collapse;
+  font-size: xx-large;
+  height: 35vw;
+}
+#keys tr td {
+  border: 1px solid black;
+  text-align: center;
+  width: 33.3333%;
+}
+
+#keys tr {
+  width: 100%;
+}
+
+#screen {
+  border: 1px solid black;
+  height: 150px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+#display {
+  font-size: 1.18em;
+  margin: 10px;
+  line-height: 30px;
+  letter-spacing: 2px;
+  width: 100%;
+  font-weight: bolder;
+}
