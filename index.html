@@ -4,48 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="app.js"></script>
     <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <title>Calc ulator</title>
 </head>
 <body>
     <div id="cal">
         <div id="screen">
-            <section id="display"></section>
+            <section id="display">0</section>
         </div>
             <table  id="keys">
                 <tr>
-                    <td><button id="one" class="key">1</button></td>
-                    <td><button id="two" class="key">2</button></td>
-                    <td><button id="delete" class="key">Delete</button></td>
+                    <td><button id="one" class="key" onclick="display(1)">1</button></td>
+                    <td><button id="two" class="key" onclick="display(2)">2</button></td>
+                    <td><button id="delete" class="key" onclick="clean()">Delete</button></td>
                 </tr>
                 <tr>
-                    <td><button id="three" class="key">3</button></td>
-                    <td><button id="four" class="key">4</button></td>
-                    <td><button id="plus" class="key">+</button></td>
+                    <td><button id="three" class="key" onclick="display(3)">3</button></td>
+                    <td><button id="four" class="key" onclick="display(4)">4</button></td>
+                    <td><button id="plus" class="key" onclick="display('+')">+</button></td>
                 </tr>
                 <tr>
-                   <td><button  id="five" class="key">5</button></td>
-                    <td><button id="six" class="key">6</button></td>
-                    <td><button id="minus" class="key">-</button></td>
+                   <td><button  id="five" class="key" onclick="display(5)">5</button></td>
+                    <td><button id="six" class="key" onclick="display(6)">6</button></td>
+                    <td><button id="minus" class="key" onclick="display('-')">-</button></td>
                 </tr>
                 <tr>
-                    <td><button id="seven" class="key">7</button></td>
-                    <td id="eight"><button id="eight" class="key">8</button></td>
-                    <td><button id="times" class="key">*</button></td>
+                    <td><button id="seven" class="key" onclick="display(7)">7</button></td>
+                    <td id="eight"><button id="eight" class="key" onclick="display(8)">8</button></td>
+                    <td><button id="times" class="key" onclick="display('*')">*</button></td>
                 </tr>
                         <tr>
-                            <td><button id="nine" class="key">9</button></td>
-                            <td><button id="zero" class="key">0</button></td>
-                            <td><button id="devide" class="key">/</button></td>
+                            <td><button id="nine" class="key" onclick="display(9)">9</button></td>
+                            <td><button id="zero" class="key" onclick="display(0)">0</button></td>
+                            <td><button id="devide" class="key" onclick="display('/')">/</button></td>
                         </tr>
                                 <tr>
-                                    <td><button id="on" class="key">On</button></td>
-                                    <td><button id="clear" class="key">Clear</button></td>
-                                    <td><button id="equal" class="key">=</button></td>
+                                    <td><button id="on" class="key" onclick="power()">OFF</button></td>
+                                    <td><button id="clear" class="key" onclick="wipe()">Clear</button></td>
+                                    <td><button id="equal" class="key" onclick="answer()">=</button></td>
                                 </tr>
             </table>
     </div>
     <table></table>
+    <script src="app.js"></script>
 </body>
 </html>
